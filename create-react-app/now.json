@@ -23,6 +23,7 @@
       "headers": { "cache-control": "s-maxage=0" },
       "dest": "/service-worker.js"
     },
+    { "src": "/sockjs-node/(.*)", "dest": "/sockjs-node/$1" },
     {
       "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
