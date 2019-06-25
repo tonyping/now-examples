@@ -5,8 +5,7 @@
   "builds": [
     {
       "src": "app.py",
-      "use": "@now/python",
-      "config": { "maxLambdaSize": "25mb" }
+      "use": "@now/python"
     },
     { "src": "css/**", "use": "@now/static" }
   ],

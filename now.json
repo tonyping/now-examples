@@ -32,12 +32,12 @@
     {
       "src": "python/api/**/*.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "10mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     {
       "src": "python-flask/**/*.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "10mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     {
       "src": "python-django/app.py",

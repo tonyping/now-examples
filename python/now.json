@@ -3,9 +3,10 @@
   "name": "my-python-project",
   "builds": [
     { "src": "www/**/*", "use": "@now/static" },
-    { "src": "api/**/*.py", "use": "@now/python" }
+    {
+      "src": "api/**/*.py",
+      "use": "@now/python"
+    }
   ],
-  "routes": [
-    { "src": "/", "dest": "www/index.html" }
-  ]
+  "routes": [{ "src": "/", "dest": "www/index.html" }]
 }
