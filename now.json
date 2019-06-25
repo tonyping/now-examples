@@ -27,7 +27,11 @@
     { "src": "nodejs/www/**/*", "use": "@now/static" },
     { "src": "nodejs-ts/api/**/*.ts", "use": "@now/node" },
     { "src": "nodejs-ts/www/**/*", "use": "@now/static" },
-    { "src": "php-7/*.php", "use": "@now/php" },
+    {
+      "src": "php-7/*.php",
+      "use": "@now/php",
+      "config": { "maxLambdaSize": "25mb" }
+    },
     { "src": "python/www/**/*", "use": "@now/static" },
     {
       "src": "python/api/**/*.py",
