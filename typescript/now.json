@@ -3,7 +3,11 @@
   "builds": [
     {
       "src": "./src/**/*.ts",
-      "use": "@now/node"
+      "use": "@now/node@canary"
+    },
+    {
+      "src": "./public/*",
+      "use": "@now/static"
     }
   ],
   "env": {
@@ -12,6 +16,7 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "/src/backend/$1" },
     { "src": "/sushi/(.*)", "dest": "/src/frontend/sushi?type=$1" },
+    { "src": "/public/(.*)", "dest": "/public/$1" },
     { "src": "/(.*)", "dest": "/src/frontend/$1" }
   ]
 }

@@ -19,9 +19,13 @@ export default async (_: NowRequest, res: NowResponse) => {
   </div>
   <h2>Learn more about...</h2>
   <ul>
-      ${sushiList.data.map(name => `<li><a class="button" href="/sushi/${name}">${name}</a></li>`).join("\n")}
+      ${sushiList.data
+        .map(
+          name => `<li><a class="button" href="/sushi/${name}">${name}</a></li>`
+        )
+        .join("\n")}
   </ul><br>
   <br>
-  <small>Sushi animation by <a target="_blank" href="https://codepen.io/yumeeeei/">yumeeeei</a>.</small>`),
+  <small>Sushi animation by <a target="_blank" href="https://codepen.io/yumeeeei/">yumeeeei</a>.</small>`)
   );
 };
