@@ -25,7 +25,8 @@
     },
     { "src": "nodejs/api/**/*.js", "use": "@now/node" },
     { "src": "nodejs/www/**/*", "use": "@now/static" },
-    { "src": "nodejs-ts/*.ts", "use": "@now/node" },
+    { "src": "nodejs-ts/api/**/*.ts", "use": "@now/node" },
+    { "src": "nodejs-ts/www/**/*", "use": "@now/static" },
     { "src": "php-7/*.php", "use": "@now/php" },
     { "src": "python/www/**/*", "use": "@now/static" },
     {
