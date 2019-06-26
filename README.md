@@ -51,6 +51,7 @@ now init              # Pick an example in the CLI
 | [Jekyll](/jekyll)                         | https://jekyll.now-examples.now.sh/       | A ready-to-deploy Jekyll site, presetup to pick up and go.                                        |
 | [Flask](/python-flask)                    | https://python-flask.now-examples.now.sh  | An example using Flask, a Python Microframework                                                   |
 | [Django](/python-django)                  | https://python-django.now-examples.now.sh | An example using Django, a Python framework for perfectionists with deadlines                     |
+| [json-server](/json-server)               | https://json-server.now-examples.now.sh   | An example using json-server, a full fake REST API.                                               |
 
 ---
 

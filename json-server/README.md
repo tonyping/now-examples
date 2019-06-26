@@ -2,8 +2,9 @@
 
 Get a full fake REST API deployed with zero coding in less than 30 seconds (seriously) on ZEIT Now
 
-**Live Demo /**: https://json-server.adriancaarolli.now.sh/
-**Live Demo /posts**: https://json-server.adriancaarolli.now.sh/posts
+**Live Demo /**: https://json-server.now-examples.now.sh/
+
+**Live Demo /posts**: https://json-server.now-examples.now.sh/posts
 
 ## Get Started with This Project
 
