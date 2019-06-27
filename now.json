@@ -49,8 +49,16 @@
       "config": { "maxLambdaSize": "25mb" }
     },
     { "src": "vue/package.json", "use": "@now/static-build" },
-    { "src": "create-react-app/package.json", "use": "@now/static-build", "config": { "distDir": "build" } },
-    { "src": "umijs/package.json", "use": "@now/static-build", "config": {"distDir": "dist" }},
+    {
+      "src": "create-react-app/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    },
+    {
+      "src": "umijs/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "dist" }
+    },
     { "src": "express/www/**/*", "use": "@now/static" },
     { "src": "express/api/**/*.js", "use": "@now/node" },
     { "src": "static/**", "use": "@now/static" },
@@ -96,6 +104,8 @@
       "config": { "distDir": "build" }
     },
     { "src": "nextjs-mysql/api/**/*.js", "use": "@now/node" },
-    { "src": "nextjs-mysql/next.config.js", "use": "@now/next" }
+    { "src": "nextjs-mysql/next.config.js", "use": "@now/next" },
+    { "src": "vanilla-json-api/api/**/*.js", "use": "@now/node" },
+    { "src": "vanilla-json-api/www/**/*", "use": "@now/static" }
   ]
 }

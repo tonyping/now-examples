@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A simple deployment with the Now API!</title>
+    <link rel="stylesheet" href="https://css.zeit.sh" />
+  </head>
+  <style>
+    body {
+      text-align: center;
+    }
+    h1 {
+      margin-top: 70px;
+      font-size: 45px;
+    }
+  </style>
+  <body>
+    <h1>Welcome to a Static Site with Data from a JSON API</h1>
+    <h2>
+      Deployed with
+      <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener"
+        >ZEIT Now</a
+      >!
+    </h2>
+    <p>
+      <a
+        href="https://github.com/zeit/now-examples/blob/master/json-api"
+        target="_blank"
+        rel="noreferrer noopener"
+        >This project</a
+      >
+      includes three files. A static <code>www/index.html</code> (rewritten with
+      <a
+        href="https://zeit.co/docs/v2/deployments/routes/"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Routes</a
+      >
+      for access from the root) file as the homepage, a serverless function
+      <code>api/index.js</code> that returns the date the page was created on
+      invocation and a <code>db.js</code> file that provides the data for the
+      API.
+    </p>
+    <p>
+      With the JSON API, you can access your data defined in the
+      <code>db.js</code> file with
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"
+        target="_blank"
+        rel="noreferrer noopener"
+        >HTTP methods</a
+      >. This allows for rapid prototyping with
+      <a href="https://zeit.co/now" target="_blank" rel="noreferrer noopener"
+        >Now's</a
+      >
+      <strong>single command deployments</strong>, as routes are defined by the
+      structure of your <code>db.js</code> file. To test this, visit
+      <a href="/posts/4" target="_blank" rel="noreferrer noopener">/posts/4</a>.
+    </p>
+    <br />
+    <h3>
+      The date this page was built according to the JSON API is:
+    </h3>
+    <p class="date js-date">Loading date...</p>
+    <script>
+      function main() {
+        return fetch('/date')
+          .then(resp => resp.json())
+          .then(function(date) {
+            const { pageCreated } = date[0];
+            document.querySelector('.js-date').textContent = pageCreated;
+          });
+      }
+      main();
+    </script>
+  </body>
+</html>

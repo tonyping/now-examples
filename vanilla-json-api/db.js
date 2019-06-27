@@ -1,54 +1,59 @@
-/* eslint-disable import/no-extraneous-dependencies */
-const Faker = require("faker");
+const moment = require('moment');
+const Faker = require('faker');
 
 module.exports = () => {
   const data = {
+    date: [
+      {
+        pageCreated: moment().format('MMMM Do YYYY, h:mm:ss a')
+      }
+    ],
     posts: [
       {
         id: 1,
-        state: "active",
+        state: 'active',
         title: Faker.lorem.words(),
         description: Faker.lorem.paragraphs(),
         image: Faker.image.imageUrl()
       },
       {
         id: 2,
-        state: "draft",
+        state: 'draft',
         title: Faker.lorem.words(),
         description: Faker.lorem.paragraphs(),
         image: null
       },
       {
         id: 3,
-        state: "draft",
+        state: 'draft',
         title: Faker.lorem.words(),
         description: Faker.lorem.paragraphs(),
         image: null
       },
       {
         id: 4,
-        state: "draft",
+        state: 'draft',
         title: Faker.lorem.words(),
         description: Faker.lorem.paragraphs(),
         image: null
       },
       {
         id: 5,
-        state: "archived",
+        state: 'archived',
         title: Faker.lorem.words(),
         description: Faker.lorem.paragraphs(),
         image: Faker.image.imageUrl()
       },
       {
         id: 6,
-        state: "archived",
+        state: 'archived',
         title: Faker.lorem.words(),
         description: Faker.lorem.paragraphs(),
         image: Faker.image.imageUrl()
       },
       {
         id: 123,
-        state: "archived",
+        state: 'archived',
         title: Faker.lorem.words(),
         description: Faker.lorem.paragraphs(),
         image: Faker.image.imageUrl()
