@@ -1,6 +1,6 @@
 # JSON API with a Static Frontend on ZEIT Now
 
-**Live Demo**: https://json-api.now-examples.now.sh/
+**Live Demo**: https://vanilla-json-api.now-examples.now.sh/
 
 This example shows a pre-setup project including:
 
