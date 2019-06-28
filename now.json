@@ -4,8 +4,6 @@
   "public": true,
   "builds": [
     { "src": "apollo/index.js", "use": "@now/node-server" },
-    { "src": "go/api/**/*.go", "use": "@now/go" },
-    { "src": "go/www/**/*", "use": "@now/static" },
     { "src": "bash/*.sh", "use": "@now/bash" },
     { "src": "markdown/*.css", "use": "@now/static" },
     {
@@ -105,6 +103,8 @@
     },
     { "src": "nextjs-mysql/api/**/*.js", "use": "@now/node" },
     { "src": "nextjs-mysql/next.config.js", "use": "@now/next" },
+    { "src": "vanilla-go/api/**/*.go", "use": "@now/go" },
+    { "src": "vanilla-go/www/**/*", "use": "@now/static" },
     { "src": "vanilla-json-api/api/**/*.js", "use": "@now/node" },
     { "src": "vanilla-json-api/www/**/*", "use": "@now/static" }
   ]

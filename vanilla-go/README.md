@@ -1,8 +1,9 @@
 # Go API with a Static Frontend on ZEIT Now
 
-**Live Demo**: https://go.now-examples.now.sh/
+**Live Demo**: https://vanilla-go.now-examples.now.sh/
 
 This example shows a pre-setup project including:
+
 - An `api` directory, containing a single endpoint that retrieves the current time with Golang.
 - A `www` directory, containing static files such as `index.html` and `style.css` that show a frontend with information from the API.
 
@@ -37,20 +38,22 @@ If on anything other than the default branch, with each push your project will b
 If pushing or merging to the default branch, your project will be deployed and aliased in a production environment, automatically.
 
 Read more about the ZEIT Now Git Integrations:
+
 - [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github/)
 - [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab/)
-
 
 #### Deploying from Your Terminal
 
 Using [Now CLI](https://zeit.co/download), you can also deploy to both [staging](https://zeit.co/docs/v2/domains-and-aliases/aliasing-a-deployment#staging) and [production](https://zeit.co/docs/v2/domains-and-aliases/aliasing-a-deployment#production) environments from your terminal.
 
 For a staging deployment, you can use the following one-word command:
+
 ```bash
 now
 ```
 
 Then, for production, including automatic aliasing, you can use the following:
+
 ```bash
 now --target production
 ```
@@ -59,7 +62,7 @@ For more information on deploying, see the [Deployment Basics documentation](htt
 
 ## Configuration Breakdown
 
-This example contains a `now.json` file which instructs Now how to treat this project when developing locally and deploying. 
+This example contains a `now.json` file which instructs Now how to treat this project when developing locally and deploying.
 
 ```json
 {
@@ -69,9 +72,7 @@ This example contains a `now.json` file which instructs Now how to treat this pr
     { "src": "www/**/*", "use": "@now/static" },
     { "src": "api/**/*.go", "use": "@now/go" }
   ],
-  "routes": [
-    { "src": "/", "dest": "www/index.html" }
-  ]
+  "routes": [{ "src": "/", "dest": "www/index.html" }]
 }
 ```
 
@@ -87,5 +88,6 @@ For more information on configuring Now, see the [Configuration documentation](h
 ## Resources
 
 Learn more about the ZEIT Now platform from [our documentation](https://zeit.co/docs), including:
+
 - [More information on deploying Go projects](https://zeit.co/docs/v2/deployments/official-builders/go-now-go) and some technical details.
 - [More information on the platform itself](https://zeit.co/docs), including [domains and aliasing](https://zeit.co/docs/v2/domains-and-aliases/introduction/) and [local development](https://zeit.co/docs/v2/development/basics/).

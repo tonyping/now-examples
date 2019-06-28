@@ -13,15 +13,15 @@ now init              # Pick an example in the CLI
 
 ### Programming Languages
 
-| Example                | Demo                                | Description                                             |
-| :--------------------- | :---------------------------------- | :------------------------------------------------------ |
-| [Monorepo](/monorepo)  | https://monorepo-v2.now.sh          | A Monorepo example using multiple programming languages |
-| [Go](/go)              | https://go.now-examples.now.sh/     | A simple GoLang example                                 |
-| [PHP 7](/php-7)        | https://php7-v2.now.sh              | A simple PHP 7 example                                  |
-| [Python](/python)      | https://python-v2.now.sh            | A simple Python example                                 |
-| [Node.js](/nodejs)     | https://nodejs.now-examples.now.sh/ | A simple Node.js example                                |
-| [Static](/static)      | https://static-example.now.sh       | A simple Static website example                         |
-| [Elm](/create-elm-app) | https://create-elm-app-v2.now.sh    | An example Elm app created with create-elm-app          |
+| Example                | Demo                                    | Description                                             |
+| :--------------------- | :-------------------------------------- | :------------------------------------------------------ |
+| [Monorepo](/monorepo)  | https://monorepo-v2.now.sh              | A Monorepo example using multiple programming languages |
+| [Go](/go)              | https://vanilla-go.now-examples.now.sh/ | A simple GoLang example                                 |
+| [PHP 7](/php-7)        | https://php7-v2.now.sh                  | A simple PHP 7 example                                  |
+| [Python](/python)      | https://python-v2.now.sh                | A simple Python example                                 |
+| [Node.js](/nodejs)     | https://nodejs.now-examples.now.sh/     | A simple Node.js example                                |
+| [Static](/static)      | https://static-example.now.sh           | A simple Static website example                         |
+| [Elm](/create-elm-app) | https://create-elm-app-v2.now.sh        | An example Elm app created with create-elm-app          |
 
 ---
 
