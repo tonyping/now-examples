@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "nextjs-node-js-mongodb",
+  "alias": "nextjs-nodejs-mongodb",
+  "builds": [
+    { "src": "api/**/*.js", "use": "@now/node" },
+    { "src": "next.config.js", "use": "@now/next" }
+  ],
+  "regions": ["iad"],
+  "env": {
+    "MONGODB_URI": "@mongodb_guestbook_uri",
+    "GITHUB_CLIENT_ID": "@github_guestbook_client_id",
+    "GITHUB_CLIENT_SECRET": "@github_guestbook_client_secret"
+  }
+}
