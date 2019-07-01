@@ -1,4 +1,5 @@
 {
+  "private": true,
   "dependencies": {
     "koa": "^2.6.2"
   }

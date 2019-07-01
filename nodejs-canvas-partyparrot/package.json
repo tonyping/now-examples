@@ -1,16 +1,13 @@
 {
   "name": "ppaas",
   "version": "1.0.0",
+  "private": true,
   "description": "Party Parrot as a Service",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "partyparrot"
-  ],
-  "author": "flguillemette",
   "license": "ISC",
   "dependencies": {
     "canvas": "^2.2.0",

@@ -2,8 +2,7 @@
   "name": "serverless-mysql",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:msweeneydev/serverless-mysql.git",
-  "author": "msweeneydev <mail@msweeneydev.com>",
+  "private": true,
   "license": "MIT",
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",

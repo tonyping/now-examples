@@ -1,6 +1,7 @@
 {
   "name": "next-news",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "ms": "^2.1.1",

@@ -1,4 +1,5 @@
 {
+  "private": true,
   "dependencies": {
     "hapi": "^17.7.0"
   }

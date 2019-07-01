@@ -1,4 +1,5 @@
 {
+  "private": true,
   "dependencies": {
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",

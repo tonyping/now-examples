@@ -1,4 +1,5 @@
 {
+  "private": true,
   "dependencies": {
     "pdfkit": "^0.8.3"
   }

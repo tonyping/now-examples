@@ -1,4 +1,5 @@
 {
+  "private": true,
   "dependencies": {
     "vue": "^2.5.17",
     "vue-server-renderer": "^2.5.17"

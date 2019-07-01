@@ -1,9 +1,8 @@
 {
   "name": "github-guestbook",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
-  "repository": "git@github.com:msweeneydev/github-guestbook.git",
-  "author": "msweeneydev <mail@msweeneydev.com>",
   "license": "MIT",
   "dependencies": {
     "date-fns": "^1.30.1",
