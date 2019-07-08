@@ -3,7 +3,7 @@
   "name": "my-node-server-project",
   "builds": [
     { "src": "www/**/*", "use": "@now/static" },
-    { "src": "api/**/*.js", "use": "@now/node-server" }
+    { "src": "api/**/*.js", "use": "@now/node" }
   ],
   "routes": [{ "src": "/", "dest": "www/index.html" }]
 }

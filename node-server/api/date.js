@@ -7,4 +7,4 @@ const server = http.createServer((req, res) => {
   res.end(currentTime);
 });
 
-server.listen();
+module.exports = server;

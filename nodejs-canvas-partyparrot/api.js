@@ -3,7 +3,6 @@ const ParrotOptionsValidator = require("./src/ParrotOptionsValidator");
 const path = require("path");
 const fs = require('fs')
 const express = require("express");
-const request = require("request-promise");
 
 var app = express();
 
@@ -70,4 +69,4 @@ function constructParrot(res, queryParams) {
     }
 }
 
-app.listen(process.env.PORT || 8080);
+module.exports = app;

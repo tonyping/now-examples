@@ -9,20 +9,24 @@ This example is basically a fork of [PPaaS](https://github.com/francoislg/PPaaS)
 
 The new APIs works perfectly with just a few small changes in `ParrotFrameHandler.js`.
 
-## Config `@now/node-server`
+## Config `@now/node`
 First we need to [increase the max lambda size](https://zeit.co/blog/customizable-lambda-sizes) to `40mb` cause it exceeds the default limit.
 
-Also, PPaaS has "baseparrots" images which will be read at runtime. So these assets cannot be compiled and bundled by [ncc](https://github.com/zeit/ncc). We need to disable the `bundle` option so all files will be copied to the right place.
+Also, PPaaS has "baseparrots" images which will be read at runtime. So these assets cannot be compiled and bundled by [ncc](https://github.com/zeit/ncc). We need to use the `includeFiles` option so that dynamic files will be included.
 
-In summary, the `@now/node-server` config looks like this:
+In summary, the `@now/node` config looks like this:
 
 ```json
 {
   "src": "index.js",
-  "use": "@now/node-server",
+  "use": "@now/node",
   "config": {
-    "maxLambdaSize": "40mb",
-    "bundle": false
+    "maxLambdaSize": "28mb",
+    "includeFiles": [
+      "baseparrots/**",
+      "baseparrots-white/**",
+      "src/parrotconfigs/**"
+    ]
   }
 }
 ```

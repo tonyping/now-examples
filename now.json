@@ -3,7 +3,7 @@
   "name": "now-examples",
   "public": true,
   "builds": [
-    { "src": "apollo/index.js", "use": "@now/node-server" },
+    { "src": "apollo/index.js", "use": "@now/node" },
     { "src": "bash/*.sh", "use": "@now/bash" },
     { "src": "markdown/*.css", "use": "@now/static" },
     {
@@ -65,9 +65,9 @@
     { "src": "html-minifier/index.html", "use": "@now/html-minifier" },
     { "src": "mdx-deck/deck.mdx", "use": "@now/mdx-deck" },
     { "src": "node-server/static/**/*", "use": "@now/static" },
-    { "src": "node-server/api/**/*.js", "use": "@now/node-server" },
+    { "src": "node-server/api/**/*.js", "use": "@now/node" },
     { "src": "optipng/showcase.png", "use": "@now/optipng" },
-    { "src": "nodejs-hapi/index.js", "use": "@now/node-server" },
+    { "src": "nodejs-hapi/index.js", "use": "@now/node" },
     { "src": "nodejs-koa/index.js", "use": "@now/node" },
     {
       "src": "nodejs-coffee/app.coffee",

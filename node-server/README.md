@@ -4,7 +4,7 @@
 
 This example shows a pre-setup project including:
 
-- An `api` directory, containing a single endpoint that retrieves the current time with Node.js built with the [@now/node-server Builder](https://zeit.co/docs/v2/deployments/official-builders/node-js-server-now-node-server/).
+- An `api` directory, containing a single endpoint that retrieves the current time with Node.js built with the [@now/node Builder](https://zeit.co/docs/v2/deployments/official-builders/node-js-now-node).
 - A `www` directory, containing static files such as `index.html` and `style.css` that show a frontend with information from the API.
 
 ## Get Started with This Project
@@ -70,7 +70,7 @@ This example contains a `now.json` file which instructs Now how to treat this pr
   "name": "my-node-server-project",
   "builds": [
     { "src": "www/**/*", "use": "@now/static" },
-    { "src": "api/**/*.js", "use": "@now/node-server" }
+    { "src": "api/**/*.js", "use": "@now/node" }
   ],
   "routes": [{ "src": "/", "dest": "www/index.html" }]
 }
@@ -80,7 +80,7 @@ The above instructs Now with:
 
 - The [`version` property](https://zeit.co/docs/v2/deployments/configuration#version), specifying the latest Now 2.0 Platform version.
 - The [`name` property](https://zeit.co/docs/v2/deployments/configuration#name), setting the name for the deployment.
-- The [`builds` property](https://zeit.co/docs/v2/deployments/configuration#builds), allowing Now to use [the @now/node-server Builder](https://zeit.co/docs/v2/deployments/official-builders/node-js-server-now-node-server/) with a specific source target.
+- The [`builds` property](https://zeit.co/docs/v2/deployments/configuration#builds), allowing Now to use [the @now/node Builder](https://zeit.co/docs/v2/deployments/official-builders/node-js-now-node) with a specific source target.
 - The [`routes` property](https://zeit.co/docs/v2/deployments/configuration#routes), instructing Now to route the user to the `www/index.html` file when requesting the root path.
 
 For more information on configuring Now, see the [Configuration documentation](https://zeit.co/docs/v2/deployments/configuration).
@@ -89,5 +89,5 @@ For more information on configuring Now, see the [Configuration documentation](h
 
 Learn more about the ZEIT Now platform from [our documentation](https://zeit.co/docs), including:
 
-- [More information on deploying Node-Server projects](https://zeit.co/docs/v2/deployments/official-builders/node-js-server-now-node-server/) and some technical details.
+- [More information on deploying Node projects](https://zeit.co/docs/v2/deployments/official-builders/node-js-now-node) and some technical details.
 - [More information on the platform itself](https://zeit.co/docs), including [domains and aliasing](https://zeit.co/docs/v2/domains-and-aliases/introduction/) and [local development](https://zeit.co/docs/v2/development/basics/).

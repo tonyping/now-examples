@@ -1,5 +1,4 @@
-const fs = require('fs');
-const { Canvas, Image, createCanvas } = require('canvas');
+const { createCanvas } = require('canvas');
 
 function ParrotFrameHandler(parrotConfig) {
     this.width = parrotConfig.getWidth();

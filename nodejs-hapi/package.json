@@ -1,6 +1,6 @@
 {
   "private": true,
   "dependencies": {
-    "hapi": "^17.7.0"
+    "@hapi/hapi": "18.3.1"
   }
 }

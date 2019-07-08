@@ -3,7 +3,6 @@ const ParrotFramesReader = require("./ParrotFramesReader");
 const ParrotFrameHandler = require("./ParrotFrameHandler");
 const ParrotConfig = require("./ParrotConfig");
 const ImageFactory = require("./ImageFactory");
-const config = require("./config");
 
 function ParrotConstructor() {
     this.imageFactory = new ImageFactory();
