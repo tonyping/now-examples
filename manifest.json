@@ -84,10 +84,10 @@
     "description": "An Aurelia app, created with the Aurelia CLI."
   },
   {
-    "example": "Docusauras",
-    "path": "/docusauras",
-    "demo": "https://docusauras.now-examples.now.sh",
-    "description": "A static Docusauras site that makes it easy to maintain OSS documentation."
+    "example": "Docusaurus",
+    "path": "/docusaurus",
+    "demo": "https://docusaurus.now-examples.now.sh",
+    "description": "A static Docusaurus site that makes it easy to maintain OSS documentation."
   },
   {
     "example": "VuePress",
