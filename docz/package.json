@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "docz dev",
-    "build": "docz build",
-    "now-build": "docz build",
-    "now-dev": "docz dev --port $PORT"
+    "build": "docz build"
   },
   "devDependencies": {
     "docz": "^0.13.7",

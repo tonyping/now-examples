@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "name": "my-vanilla-go-project",
-  "builds": [
-    { "src": "www/**/*", "use": "@now/static" },
-    { "src": "api/**/*.go", "use": "@now/go" }
-  ],
-  "routes": [{ "src": "/", "dest": "www/index.html" }]
-}

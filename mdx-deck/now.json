@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "name": "mdx-deck",
-  "builds": [
-    { "src": "deck.mdx", "use": "@now/mdx-deck" }
-  ]
-}

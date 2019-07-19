@@ -1,90 +1,121 @@
 # Contributing
 
-When contributing to this repository, make sure your example fits the purpose of the repository.
-When in doubt, create an issue to discuss the change you wish to make.
+Thank you for your interest in contributing to the ZEIT Now Examples!
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+The following describes how to contribute to the Now Examples repository.
 
-## General Guidelines
+## What Does this Document Contain?
 
-1. Make sure your example is deployable and works perfectly.
-2. A good `README.md` is the best "welcome mat" for your example. This repository has many examples,
-   it is advised to copy & paste a `README.md` from another example and adapt to your contribution,
-   for better navigation across examples.
-3. `now.json` should always be present. Developers expect the code to be as ready as possible,
-   which means having a correct `now.json` is expected.
+This document contains all the required information and links to resources needed to contribute to the ZEIT documentation:
+
+- [Code of Conduct](#code-of-conduct) - our Code of Conduct, adapted from the [Contributor Covenant](http://contributor-covenant.org)
+- [Reporting an Issue](#reporting-issues) - guidance on how to raise an issue or provide feedback on examples
+- [Contributing Content](#contributing-content) - a collection of all information required for contributing
+  - [Forking Workflow](#forking-workflow) - a guide on how to keep your fork in sync with `master`
+  - [Documentation](#documentation) - information on contributing to the [ZEIT Now Documentation](https://github.com/zeit/docs) repository
 
 ## Code of Conduct
 
-### Our Pledge
+We provide a [Code of Conduct](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to make clear the behavior we expect from contributors and maintainers alike. We are committed to providing a welcoming and supportive environment and kindly request that you participate in these values also.
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
+Our Code of Conduct is adapted from the [Contributor Covenant](http://contributor-covenant.org), version 1.4, available at [http://contributor-covenant.org/version/1/4](http://contributor-covenant.org/version/1/4/).
 
-### Our Standards
+## Reporting Issues
 
-Examples of behavior that contributes to creating a positive environment
-include:
+If you have found a bug, spelling mistake, or anything related to an example that you feel could be improved, please create a new issue here on GitHub. For issues relating to documentation, please [create an issue in the documentation repository](https://github.com/zeit/docs/issues/new).
 
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints and experiences
-- Gracefully accepting constructive criticism
-- Focusing on what is best for the community
-- Showing empathy towards other community members
+An issue can be raised by clicking the 'Issues' tab at the top of the repository, followed by the Green 'New issue' button. When submitting an issue, please thoroughly and concisely describe the problem you are experiencing, or improvement you feel could be made, so that we may easily understand and resolve the issue in a timely manner.
 
-Examples of unacceptable behavior by participants include:
+## Contributing Content
 
-- The use of sexualized language or imagery and unwelcome sexual attention or
-  advances
-- Trolling, insulting/derogatory comments, and personal or political attacks
-- Public or private harassment
-- Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-- Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide with zero configuration required. We welcome contributions of new examples that use the 'hello world' template of the particular framework or static site you want to add.
 
-### Our Responsibilities
+When contributing a new example, we kindly ask that you follow the steps below:
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+- Add an example that uses the default theme or template of the generator
+- Add a README.md file using the same format as existing examples
+- Test the example by deploying it with `now` to ensure it is working correctly
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+When contributing an example, please fork this repository and then add your example before submitting a pull request. If you are not sure how to do this then please take a look at the [Forking Workflow](#forking-workflow) below.
 
-### Scope
+We appreciate all contributions and are more than happy to provide assistance wherever it is needed. You can get help with your contribution either by discussing it on a pull request or by reaching out to us in the [ZEIT Spectrum](https://spectrum.chat/zeit).
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+## Forking Workflow
 
-### Enforcement
+To contribute to this repository, you will need to fork it, make changes and submit a pull request. This section is a brief guide on how to do this whilst making sure your forked repository stays up to date the with the official one.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [abuse@zeit.co](mailto:abuse@zeit.co). All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+The first step is to fork the repository, creating a copy of it under your own account. To do this, click the 'fork' button at the top right of the page.
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+A few seconds later you should be redirected. Now, if you look at the top left of the page it should show your GitHub username before the repository, confirming the fork has been successful.
 
-### Attribution
+Next you need to clone your fork your local environment so you can make changes to it. To do this you can click the Green 'Clone or download' button which will give you a URL to copy. Once copied, enter `git clone` in your terminal followed by the URL and hit enter, the command should look like this:
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
+`git clone git@github.com:<your username here>/docs.git`
 
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+If successful, you should see the forked repository being cloned to your local environment.
+
+Once you've cloned the forked repository to your local environment, it's a good idea to install the project dependencies. We use [Yarn](https://yarnpkg.com/en/) as our package manager, if you do not have it installed currently, their documentation provides a set of [instructions](https://yarnpkg.com/en/docs/install#mac-stable).
+
+To install the project dependencies, simply enter:
+
+`yarn`
+
+With the dependencies installed, you should now add a remote path to the official repository. This will allow you to pull the most recent changes from the official repository into your local fork at any time, ensuring things are kept up to date and in sync.
+
+To add the remote path for the official git repository, enter the following:
+
+`git remote add upstream git@github.com:zeit/docs.git`
+
+This command adds a new remote branch, with the name 'upstream'. If you ever want to pull the recent changes to update your local fork you can use the following command:
+
+`git pull upstream master`
+
+So far you've managed to fork, clone, install dependencies and add a remote, not bad going! Now you want to start making our changes, to do this you should create a new branch. Creating a branch for each change you make will keep things simpler for everyone and allow you to work on multiple changes at once if you like.
+
+You can create a branch by using:
+
+`git checkout -b <your branch name>`
+
+Remember to use a descriptive and meaningful name when creating your branch, this will help you remember what its purpose is!
+
+Now you're working on a branch you are a free to make the changes needed, further help with this can be found [below](#platform-and-usage-documentation). After you've finished making changes, commit them and push them to your new branch, you will need to create a new upstream remote to do this.
+
+To create a new upstream remote, enter:
+
+`git push --set-upstream origin <your branch name>`
+
+Your new branch should now appear on your remote repository. It can be viewed by visiting your remote repository and clicking 'Branches'. On this page you will see multiple sections, the most important one being 'Your branches'.
+
+To the right of the branch you will see a button that says 'New pull request', click this to begin the process of submitting your changes for review. You will now be prompted to enter a relevant title and a description of the changes made. When entering this information try to be concise but make sure to include the following information:
+
+- What changes you've made
+- Your reason for making them
+- A request for feedback if required (add [WIP] to your title)
+
+Congratulations, you've just made your first pull request to the ZEIT Documentation!
+
+The rest of this section relates to other scenarios you may encounter whilst contributing and may not be applicable just yet, so feel free to [read ahead](#platform-and-usage-documentation). If you want to know what you should do in the event changes are requested to your pull request, or your master branch becomes out of sync with the official repository, read on below:
+
+### Master Branch out of Sync
+
+This is very common and happens when changes are made to the official repository, meaning your fork is suddenly out of date. The only time you need to consider this is before you create a new branch, this means that whenever you start working on changes, your branch will always be up to date as of that moment.
+
+When pulling changes from the official repository, it is always a good idea to do so from your master branch. Providing you've followed the advice above about adding a remote upstream, your command should look like this:
+
+`git pull upstream master`
+
+This will get the most recent changes and bring your local fork up to date, at this point it is a good idea to have your remote fork reflect this, all this requires is to use:
+
+`git push`
+
+Now, both your local and remote fork are up to date with the official repository, you are ready to create branches and make changes!
+
+### Pull Request Changes Requested
+
+When you submit a pull request, a reviewer may request that you make further changes before merging with the master branch. This situation might seem difficult at first but is extremely straightforward.
+
+All you need to do is make the changes on the same branch locally, commit and push them. Because you already have a pull request set up to track that branch, GitHub will automatically update it with your most recent changes. At this point it's a good idea to tag the original reviewer in the pull request using `@<reviewers username>`, to let them know you've made the requested changes.
+
+## Documentation
+
+This repository contains only examples to be used with the Now platform. The [ZEIT Now Documentation](https://github.com/zeit/docs) is a separate repository. If you would like to contribute to the documentation, please read the [contributing guidelines](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to find more information on doing so.

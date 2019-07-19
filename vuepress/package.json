@@ -5,9 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "now-dev": "vuepress dev docs --port=$PORT",
-    "now-build": "npm run build && mv docs/.vuepress/dist dist"
+    "build": "vuepress build docs && mv docs/.vuepress/dist public"
   },
   "devDependencies": {
     "vuepress": "^0.14.4"

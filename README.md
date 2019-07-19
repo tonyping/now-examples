@@ -1,67 +1,66 @@
-# Now Examples
+# ZEIT Now Examples
 
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/zeit)
+This is the public list of examples for **ZEIT Now**.
 
-To set up any of these examples as your own project, [install Now](https://zeit.co/docs/v2/getting-started/installation) and use the following command in your terminal.
+All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide with zero configuration required.
+
+The `+functions` examples feature an `/api` directory as well, highlighting how to use serverless functions on top of a framework, again with zero configuration required.
+
+## What is ZEIT Now?
+
+ZEIT Now is a cloud platform for static frontends and serverless functions. It enables developers to host websites and web applications that deploy instantly, scale automatically, and require no supervision.
+
+## What Does this Repository Contain?
+
+This repository consists of multiple examples, created for use with the [ZEIT Now](https://zeit.co/now) platform. In addition to this, it also contains:
+
+- [Code of Conduct](https://github.com/zeit/now-examples/blob/master/CODE_OF_CONDUCT.md) - our Code of Conduct, adapted from the [Contributor Covenant](http://contributor-covenant.org)
+- [Contributing Guidelines](https://github.com/zeit/now-examples/blob/master/CONTRIBUTING.md) - a guide on how to contribute to the Now Examples repository
+- [License](https://github.com/zeit/now-examples/blob/master/LICENSE.md) - the standard MIT license under which these examples are published
+- [`manifest.json`](https://github.com/zeit/now-examples/blob/master/manifest.json) - a JSON file that makes examples available as template on the ZEIT dashboard
+
+We recommend familiarizing yourself with the above sections, particularly if you are looking to make a contribution.
+
+## Deploying Examples
+
+To get started using any of these examples as your own project, [install Now](https://zeit.co/download) and use either of the following commands in your terminal:
 
 ```sh
-now init <example>    # Create a new project from a specific <example>
-now init              # Pick an example in the CLI
+now init                    # Pick an example in the CLI
+now init <example>          # Create a new project from a specific <example>
+now init <example> <name>   # Create a new project from a specific <example> with a different folder <name>
 ```
 
----
+Deploying your project takes seconds and can be done with **just a single command**:
 
-### Programming Languages
+```sh
+now                         # Deploys the project with Now
+```
 
-| Example                | Demo                                    | Description                                             |
-| :--------------------- | :-------------------------------------- | :------------------------------------------------------ |
-| [Monorepo](/monorepo)  | https://monorepo-v2.now.sh              | A Monorepo example using multiple programming languages |
-| [Go](/go)              | https://vanilla-go.now-examples.now.sh/ | A simple GoLang example                                 |
-| [PHP 7](/php-7)        | https://php7-v2.now.sh                  | A simple PHP 7 example                                  |
-| [Python](/python)      | https://python-v2.now.sh                | A simple Python example                                 |
-| [Node.js](/nodejs)     | https://nodejs.now-examples.now.sh/     | A simple Node.js example                                |
-| [Static](/static)      | https://static-example.now.sh           | A simple Static website example                         |
-| [Elm](/create-elm-app) | https://create-elm-app-v2.now.sh        | An example Elm app created with create-elm-app          |
+With the `now` command, your project will be built and served by Now, providing you with a URL that can be shared immediately.
 
----
+## How to Contribute
 
-### Frameworks and Libraries
+Contributing to Now Examples should be an enjoyable experience, as such we have created a set of [contributing guidelines](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to help you do so.
 
-| Example                                   | Demo                                      | Description                                                                                       |
-| :---------------------------------------- | :---------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| [Next.js](/nextjs)                        | https://nextjs-v2.now.sh                  | A Next.js example using SSR                                                                       |
-| [Next.js Static](/nextjs-static)          | https://nextjs-static-v2.now.sh           | A Next.js Static exported example                                                                 |
-| [React](/create-react-app)                | https://cra-v2.now.sh                     | An example created using Create React App                                                         |
-| [Gatsby](/gatsby)                         | https://gatsby-v2.now.sh                  | Gatsby getting started example using Gatsby CLI                                                   |
-| [Vue](/vue)                               | https://vue-v2.now.sh                     | Vue example using Vue CLI                                                                         |
-| [Vue SSR](/vue-ssr)                       | https://vue-ssr-v2.now.sh                 | Vue example using server side rendering                                                           |
-| [Vuepress](/vuepress)                     | https://vuepress-v2.now.sh                | A docs example using VuePress                                                                     |
-| [Nuxt Static](/nuxt-static)               | https://nuxt-static-v2.now.sh             | A Nuxt Static exported example                                                                    |
-| [Express](/express)                       | https://express.now-examples.now.sh/      | An example using Express                                                                          |
-| [Apollo Server](/apollo)                  | https://apollo.now-examples.now.sh/       | An Apollo Server example using Serverless Micro                                                   |
-| [Markdown](/markdown)                     | https://markdown-v2.now.sh                | A static website using Markdown and CSS                                                           |
-| [MDX Deck](/mdx-deck)                     | https://mdx-deck-v2.now.sh                | A presentation using MDX Deck                                                                     |
-| [MDX Deck - Advanced](/mdx-deck-advanced) | https://advanced-mdx-deck.now.sh          | A presentation using MDX Deck with custom layout and React components                             |
-| [HTML Minifier](/html-minifier)           | https://html-minifier-v2.now.sh           | A simple HTML minification example                                                                |
-| [OptiPNG](/optipng)                       | https://optipng-v2.now.sh                 | A PNG optimize example using OptiPNG                                                              |
-| [docz](/docz)                             | https://docz.now.sh                       | A documentation example built with [docz](https://docz.site)                                      |
-| [Gridsome](/gridsome)                     | https://gridsome.now.sh                   | Vue-powered static site generated by [Gridsome](https://gridsome.org)                             |
-| [Zola](/zola)                             | https://zola.now.sh                       | A static website uses [Zola](https://www.getzola.org) and builds a website with Rust in the cloud |
-| [Puppeteer](/puppeteer-screenshot)        | https://screenshot-v2.now.sh              | A Puppeteer based screenshot example                                                              |
-| [Jekyll](/jekyll)                         | https://jekyll.now-examples.now.sh/       | A ready-to-deploy Jekyll site, presetup to pick up and go.                                        |
-| [Flask](/python-flask)                    | https://python-flask.now-examples.now.sh  | An example using Flask, a Python Microframework                                                   |
-| [Django](/python-django)                  | https://python-django.now-examples.now.sh | An example using Django, a Python framework for perfectionists with deadlines                     |
-| [JSON API](/json-api)                     | https://json-api.now-examples.now.sh      | An example JSON API, simulating a full REST API by only providing JSON.                           |
+The guidelines cover important information such as the requirements for new examples and where to get help if you have any questions.
 
----
+We have tried to make contributing to Now Examples as easy as possible, especially for those new to Open Source. If anything is unclear or you have any questions then please reach out to us on [ZEIT Spectrum](https://spectrum.chat/zeit) where we will do our best to help you.
 
-### Fully Working Applications
+## Reporting Issues
 
-| Example                                                    | Demo                                           | Description                                                                                                                                                                                                |
-| :--------------------------------------------------------- | :--------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Next News](/nextjs-news)                                  | https://nextjs-news-v2.now.sh                  | A Hacker News clone created with Next.js deployed to Now 2.0                                                                                                                                               |
-| [Slack Eval](/slack-eval)                                  | https://serverless-eval.now.sh                 | A serverless Slack app deployed to Now 2.0                                                                                                                                                                 |
-| [Next MySQL Robots](/nextjs-mysql)                         | https://nextjs-mysql.now.sh                    | A serverless Next.js app that uses a MySQL database                                                                                                                                                        |
-| [Node Canvas](/nodejs-canvas-partyparrot)                  | https://ppaas.now.sh                           | A Party Parrot generator built on node-canvas                                                                                                                                                              |
-| [Twitter Dreamify with Express](/express-twitter-dreamify) | https://serverless-express.now.sh              | A serverless Express application that takes an authenticated Twitter user's avatar and dreamifies it. [Read the blog post on this example](https://zeit.co/blog/serverless-express-js-lambdas-with-now-2). |
-| [Flaskex with PostgreSQL](/flaskex-postgresql)             | https://flaskex-postgresql.now-examples.now.sh | A serverless Python app built with Flask, WTForms, bcrypt, PostgreSQL, and Bulma.                                                                                                                          |
+We actively encourage our community to raise issues and provide feedback on areas of Now Examples that could be improved.
+
+An issue can be raised by clicking the 'Issues' tab at the top of the repository, followed by the Green 'New issue' button.
+
+When submitting an issue, please thoroughly and concisely describe the problem you are experiencing so that we may easily understand and resolve the issue in a timely manner.
+
+## License
+
+Now Examples is an open source project released under the [MIT License](https://github.com/zeit/docs/blob/master/LICENSE.md).
+
+## Get In Touch
+
+If you have any questions that are not covered by raising an issue then please get in touch with us on the [ZEIT Spectrum](https://spectrum.chat/zeit). There you will find both members of the community and staff who are happy to help answer questions on anything ZEIT related.
+
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/zeit)

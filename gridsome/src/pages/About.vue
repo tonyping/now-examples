@@ -1,11 +1,14 @@
 <template>
   <Layout>
     <h1>About us</h1>
-    <p>This is the second page of the Gridsome example deployed with Now!</p>
-    <g-link to="/">Back home</g-link>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
   </Layout>
 </template>
 
 <script>
-export default {}
+export default {
+  metaInfo: {
+    title: 'About us'
+  }
+}
 </script>

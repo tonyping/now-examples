@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "charge serve source",
-    "build": "charge build source dist",
-    "now-dev": "charge serve src",
-    "now-build": "npm run build"
+    "build": "charge build source public"
   },
   "devDependencies": {
     "@static/charge": "^1.2.0"

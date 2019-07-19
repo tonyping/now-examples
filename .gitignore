@@ -1,11 +1,5 @@
-main.dwarf
-node_modules
-.bundle
-.next
-vendor
-target
-yarn-error.log
-.env
-
-.DS_Store
+build/
+node_modules/
+.DS_STORE
+**/yarn.lock
 **/.now

@@ -1,13 +1,33 @@
 <template>
   <Layout>
+    
+    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" src="~/favicon.png" width="135" />
+    
     <h1>Hello, world!</h1>
-    <p>This is a simple example of a Gridsome site, deployed with <a href="https://zeit.co">Now</a>.</p>
-    <p>Visit the Now examples repository to see <a href="https://github.com/zeit/now-examples">the source of this example</a>.</p>
-    <g-link to="/about">See another page.</g-link>
+   
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+    </p>
+
+    <p class="home-links">
+      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
+      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
+    </p>
+
   </Layout>
 </template>
 
 <script>
-export default {}
+export default {
+  metaInfo: {
+    title: 'Hello, world!'
+  }
+}
 </script>
+
+<style>
+.home-links a {
+  margin-right: 1rem;
+}
+</style>

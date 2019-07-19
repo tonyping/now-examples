@@ -1,31 +1,24 @@
 import { IConfig } from 'umi-types';
+
 // ref: https://umijs.org/config/
-export default {
-  routes: [{
-    path: '/',
-    component: './layout',
-    routes: [{
-      path: '/',
-      component: './index',
-    }, {
-      path: '/form',
-      component: './form',
-    }, {
-      path: '/table',
-      component: './table',
-    }, {
-      path: '*',
-      component: './404',
-    }]
-  }],
+const config: IConfig =  {
+  treeShaking: true,
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
-      antd: true,
+      antd: false,
       dva: false,
       dynamicImport: false,
       title: 'umijs',
-      dll: false
+      dll: false,
+      
+      routes: {
+        exclude: [
+          /components\//,
+        ],
+      },
     }],
   ],
-} as IConfig;
+}
+
+export default config;

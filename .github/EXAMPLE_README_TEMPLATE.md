@@ -1,35 +1,19 @@
-# <Project>
-Description
+# [Name] Example
 
-### Getting started with <Project>
+This directory is a brief example of a [Name](site-link) site that can be deployed to ZEIT Now with zero configuration.
 
-- Step 1
-- Step 2
-- Step N
+## How we created this example
 
-### Deploy with Now
+To get started with [Name] on Now, you can use the [CLI Tool Used](CLI-link) to initialize the project:
 
-First we need to create a `now.json` configuration file to instruct Now how to build the project.
-
-For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
-
-By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
-
-We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
-
-In this case we are going to use `@now/go` to build and deploy the date.go file. By default all other files will be statically served.
-
-```
-{
-    "version": 2,
-    "builds": []
-}
+```shell
+$ now init charge
 ```
 
-Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
+## Deploying this Example
 
-We are now ready to deploy the app.
+Once initialized, you can deploy the [Name] example with just a single command:
 
-```
-now
+```shell
+$ now
 ```
