@@ -51,7 +51,7 @@
     "example": "UmiJS",
     "path": "/umijs",
     "demo": "https://umijs.now-examples.now.sh",
-    "description": "An UmiJS app, creatd using the Umi CLI."
+    "description": "An UmiJS app, created using the Umi CLI."
   },
   {
     "example": "Vanilla",
@@ -78,12 +78,6 @@
     "description": "A Gridsome app, created with the Gridsome CLI."
   },
   {
-    "example": "Elm",
-    "path": "/elm",
-    "demo": "https://elm.now-examples.now.sh",
-    "description": "An Elm app, bootstrapped with create-elm-app."
-  },
-  {
     "example": "Aurelia",
     "path": "/aurelia",
     "demo": "https://aurelia.now-examples.now.sh",
@@ -93,7 +87,7 @@
     "example": "Docusauras",
     "path": "/docusauras",
     "demo": "https://docusaurus.now-examples.now.sh",
-    "description": "A static Docusauras site that makes it easy to maintin OSS documentation."
+    "description": "A static Docusauras site that makes it easy to maintain OSS documentation."
   },
   {
     "example": "VuePress",
