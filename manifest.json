@@ -7,7 +7,7 @@
   },
   {
     "example": "Gatsby",
-    "path": "/gatsby+functions",
+    "path": "/gatsby-functions",
     "demo": "https://gatsby-functions.now-examples.now.sh",
     "description": "A Gatsby app, using the default starter theme, backed by serverless functions."
   },
@@ -19,13 +19,13 @@
   },
   {
     "example": "Create-React-App",
-    "path": "/create-react-app+functions",
+    "path": "/create-react-app-functions",
     "demo": "https://react-functions.now-examples.now.sh",
     "description": "A React app, bootstrapped with create-react-app, backed by serverless functions."
   },
   {
     "example": "Svelte",
-    "path": "/svelte+functions",
+    "path": "/svelte-functions",
     "demo": "https://svelte-functions.now-examples.now.sh",
     "description": "A Svelte app, using the Svelte template, backed by serverless functions."
   },
@@ -55,7 +55,7 @@
   },
   {
     "example": "Vanilla",
-    "path": "/vanilla+functions",
+    "path": "/vanilla-functions",
     "demo": "https://vanilla-functions.now-examples.now.sh",
     "description": "A vanilla site, backed by serverless function."
   },
