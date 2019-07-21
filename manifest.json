@@ -84,6 +84,12 @@
     "description": "An Aurelia app, created with the Aurelia CLI."
   },
   {
+    "example": "Ember",
+    "path": "/ember",
+    "demo": "https://ember.now-examples.now.sh",
+    "description": "An Ember app, created with the Ember CLI."
+  },
+  {
     "example": "Docusaurus",
     "path": "/docusaurus",
     "demo": "https://docusaurus.now-examples.now.sh",
