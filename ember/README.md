@@ -7,7 +7,7 @@ This directory is a brief example of an [Ember](https://emberjs.com/) app that c
 To get started with Ember on Now, you can use the [Ember CLI](https://ember-cli.com/) to initialize the project:
 
 ```shell
-$ npx ember new ember-project
+$ npx ember-cli new ember-project
 ```
 
 ## Deploying this Example
