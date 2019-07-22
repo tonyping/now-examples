@@ -108,6 +108,12 @@
     "description": "A Charge app to get you up and running."
   },
   {
+    "example": "Riot.js",
+    "path": "/riot",
+    "demo": "https://riot.now-examples.now.sh",
+    "description": "A Riot app to get you up and running."
+  },
+  {
     "example": "Jekyll",
     "path": "/jekyll",
     "demo": "https://jekyll.now-examples.now.sh",
