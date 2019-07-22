@@ -120,6 +120,12 @@
     "description": "A Hexo site, created with the Hexo CLI."
   },
   {
+    "example": "Mithril.js",
+    "path": "/mithril",
+    "demo": "https://mithril.now-examples.now.sh",
+    "description": "A Mithril app to get you up and running."
+  },
+  {
     "example": "Polymer",
     "path": "/polymer",
     "demo": "https://polymer.now-examples.now.sh",
