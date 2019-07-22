@@ -1,21 +1,19 @@
-# Webpack
+# Riot Example
 
-This is a simple example of using webpack with riot. It uses webpack loader [@riotjs/webpack-loader](https://www.npmjs.com/package/@riotjs/webpack-loader).
+This directory is a brief example of a [Riot.js](https://riot.js.org/) app that can be deployed to ZEIT Now with zero configuration.
 
-## Run locally
+## How we created this example
 
-Download or clone this repo.
+To get started with Riot on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
-Install packages.
-
-```bash
-$ npm install
-```
-And then run the server using `webpack-dev-server` or any possible way you know
-
-```bash
-$ npm start
+```shell
+$ now init riot
 ```
 
-- Open [http://localhost:3000/](http://localhost:3000/)
-- Open [http://localhost:3000/webpack-dev-server/](http://localhost:3000/webpack-dev-server/) for dev server with hot reloading.
+## Deploying this Example
+
+Once initialized, you can deploy the Riot example with just a single command:
+
+```shell
+$ now
+```
