@@ -120,6 +120,12 @@
     "description": "A Jekyll site, created with the Jekyll CLI."
   },
   {
+    "example": "Marko.js",
+    "path": "/marko",
+    "demo": "https://marko.now-examples.now.sh",
+    "description": "A Marko app, created with the Marko CLI."
+  },
+  {
     "example": "Hexo",
     "path": "/hexo",
     "demo": "https://hexo.now-examples.now.sh",
