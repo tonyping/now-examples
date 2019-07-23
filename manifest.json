@@ -138,6 +138,12 @@
     "description": "A Mithril app to get you up and running."
   },
   {
+    "example": "HyperApp",
+    "path": "/hyperapp",
+    "demo": "https://hyperapp.now-examples.now.sh",
+    "description": "A HyperApp app to get you up and running."
+  },
+  {
     "example": "Polymer",
     "path": "/polymer",
     "demo": "https://polymer.now-examples.now.sh",
