@@ -1,3 +1,4 @@
 export default {
-  dest: '/dist'
+  dest: '/public',
+  public: '/pub'
 }
