@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react';
-import Head from 'next/head';
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+import Head from '../components/head'
+import Nav from '../components/nav'
 
-function Index() {
-  const [date, setDate] = useState([]);
+const Home = () => {
+  const [date, setDate] = useState(null);
+
   useEffect(() => {
     async function getDate() {
       const res = await fetch('/api/date');
@@ -11,92 +14,127 @@ function Index() {
     }
     getDate();
   }, []);
+
   return (
-    <main>
-      <Head>
-        <title>Next.js + Node API</title>
-      </Head>
-      <h1>Next.js + Node.js API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://zeit.co/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          ZEIT Now
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/zeit/now-examples/blob/master/nextjs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        is a <a href="https://nextjs.org/">Next.js</a> app with two directories,{' '}
-        <code>/static</code> for static content and <code>/pages</code> which
-        contains content and <code>/api</code>, a serverless{' '}
-        <a href="https://nodejs.org/en/">Node.js</a> function. See{' '}
-        <a href="/pages/api/date.js">
-          <code>api/date.js</code> for the Date API with Node.js
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Node.js is:</h2>
-      <p>{date ? date.date : 'Loading date...'}</p>
+    <div>
+      <Head title="Home" />
+      <Nav />
+
+      <div className="hero">
+        <h1 className="title">Welcome to Next!</h1>
+        <p className="description">
+          To get started, edit the <code>pages/index.js</code> or <code>pages/api/date.js</code> files, then save to reload.
+        </p>
+
+        <p className="row date">
+          The date is:&nbsp; {date
+            ? <span><b>{date.date}</b></span>
+            : <span className="loading"></span>}
+        </p>
+
+        <div className="row">
+          <Link href="https://github.com/zeit/next.js#getting-started">
+            <a className="card">
+              <h3>Getting Started &rarr;</h3>
+              <p>Learn more about Next on Github and in their examples</p>
+            </a>
+          </Link>
+          <Link href="https://open.segment.com/create-next-app">
+            <a className="card">
+              <h3>Examples &rarr;</h3>
+              <p>
+                Find other example boilerplates on the{' '}
+                <code>create-next-app</code> site
+              </p>
+            </a>
+          </Link>
+          <Link href="https://github.com/segmentio/create-next-app">
+            <a className="card">
+              <h3>Create Next App &rarr;</h3>
+              <p>Was this tool helpful? Let us know how we can improve it</p>
+            </a>
+          </Link>
+        </div>
+      </div>
+
       <style jsx>{`
-        main {
-          align-content: center;
-          box-sizing: border-box;
-          display: grid;
-          font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
-            'Helvetica', 'Arial', sans-serif;
-          hyphens: auto;
-          line-height: 1.65;
-          margin: 0 auto;
-          max-width: 680px;
-          min-height: 100vh;
-          padding: 72px 0;
+        .hero {
+          width: 100%;
+          color: #333;
+        }
+        .title {
+          margin: 0;
+          width: 100%;
+          padding-top: 80px;
+          line-height: 1.15;
+          font-size: 48px;
+        }
+        .title,
+        .description {
           text-align: center;
         }
-        h1 {
-          font-size: 45px;
+        .row {
+          max-width: 880px;
+          margin: 80px auto 40px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
         }
-        h2 {
-          margin-top: 1.5em;
+        .date {
+          height: 24px;
+          max-width: calc(100% - 32px)
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 16px;
         }
-        p {
-          font-size: 16px;
+        .date p {
+          text-align: center;
         }
-        a {
-          border-bottom: 1px solid white;
-          color: #0076ff;
-          cursor: pointer;
+        .date span {
+          width: 176px;
+          text-align: center;
+        }
+        @keyframes Loading { 
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+        }
+        .date .loading {
+          max-width: 100%;
+          height: 24px;
+          border-radius: 4px;
+          display: inline-block;
+          background: linear-gradient(270deg, #D1D1D1, #EAEAEA);
+          background-size: 200% 200%;
+          animation: Loading 2s ease infinite;
+        }
+        .card {
+          padding: 18px 18px 24px;
+          width: 220px;
+          text-align: left;
           text-decoration: none;
-          transition: all 0.2s ease;
+          color: #434343;
+          border: 1px solid #9b9b9b;
         }
-        a:hover {
-          border-bottom: 1px solid #0076ff;
+        .card:hover {
+          border-color: #067df7;
         }
-        code,
-        pre {
-          color: #d400ff;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-            serif;
-          font-size: 0.92em;
+        .card h3 {
+          margin: 0;
+          color: #067df7;
+          font-size: 18px;
         }
-        code:before,
-        code:after {
-          content: '\`';
+        .card p {
+          margin: 0;
+          padding: 12px 0 0;
+          font-size: 13px;
+          color: #333;
         }
       `}</style>
-    </main>
-  );
+    </div>
+  )
 }
 
-export default Index;
+export default Home
