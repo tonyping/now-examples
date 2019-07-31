@@ -39,6 +39,20 @@ now                         # Deploys the project with Now
 
 With the `now` command, your project will be built and served by Now, providing you with a URL that can be shared immediately.
 
+## Previous Examples
+
+The Now Examples have been recently updated, as a result, many of the previous examples have been deprecated in favor of a new approach with a frontend first focus. Despite this, much of the code and information for previous examples is available from looking at the new ones.
+
+For example, the previous `nodejs` example showed a static frontend with a Node.js API. This is illustrated now in the `svelte-functions` example. Below is a table that lists some of the most popular previous examples and the equivalent replacement:
+
+| Previous Example  | New Example                                                                                               |
+| ----------------- | --------------------------------------------------------------------------------------------------------- |
+| **monorepo**      | [gatsby-functions](https://github.com/zeit/now-examples/tree/master/gatsby-functions)                     |
+| **nodejs**        | [svelte-functions](https://github.com/zeit/now-examples/tree/master/svelte-functions)                     |
+| **nextjs-static** | [nextjs](https://github.com/zeit/now-examples/tree/master/nextjs)                                         |
+| **vanilla-go**    | [create-react-app-functions](https://github.com/zeit/now-examples/tree/master/create-react-app-functions) |
+| **typescript**    | [gatsby-functions](https://github.com/zeit/now-examples/tree/master/gatsby-functions)                     |
+
 ## How to Contribute
 
 Contributing to Now Examples should be an enjoyable experience, as such we have created a set of [contributing guidelines](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to help you do so.
