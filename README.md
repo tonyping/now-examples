@@ -39,9 +39,9 @@ now                         # Deploys the project with Now
 
 With the `now` command, your project will be built and served by Now, providing you with a URL that can be shared immediately.
 
-## Previous Examples
+## New Examples
 
-The Now Examples have been recently updated, as a result, many of the previous examples have been deprecated in favor of a new approach with a frontend first focus. Despite this, much of the code and information for previous examples is available from looking at the new ones.
+We are continuously improving our examples based on best practices and feedback from the community. As a result, it is possible that example names will change and on occasion deprecated in favor of an improved implementation.
 
 For example, the previous `nodejs` example showed a static frontend with a Node.js API. This is illustrated now in the `svelte-functions` example. Below is a table that lists some of the most popular previous examples and the equivalent replacement:
 
