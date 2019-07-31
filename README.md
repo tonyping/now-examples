@@ -53,6 +53,12 @@ For example, the previous `nodejs` example showed a static frontend with a Node.
 | **vanilla-go**    | [create-react-app-functions](https://github.com/zeit/now-examples/tree/master/create-react-app-functions) |
 | **typescript**    | [gatsby-functions](https://github.com/zeit/now-examples/tree/master/gatsby-functions)                     |
 
+## Migrating and Upgrading
+
+If you have an existing project you would like to deploy with ZEIT Now, we recommend reading our guide on [migrating to Now with zero configuration](https://zeit.co/guides/migrate-to-zeit-now/). By combining the guide with this repository, you will quickly be able to understand how to deploy your application.
+
+If you would like to upgrade a project to take advantage of zero configuration, you may find the [upgrade guide](https://zeit.co/guides/upgrade-to-zero-configuration/) useful. The upgrade guide covers how to remove configuration from existing projects along with how to use the `/api` directory.
+
 ## How to Contribute
 
 Contributing to Now Examples should be an enjoyable experience, as such we have created a set of [contributing guidelines](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to help you do so.
