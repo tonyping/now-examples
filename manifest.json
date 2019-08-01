@@ -39,13 +39,19 @@
     "example": "Angular",
     "path": "/angular",
     "demo": "https://angular.now-examples.now.sh",
-    "description": "An Angular app, created with the Angular CLI"
+    "description": "An Angular app, created with the Angular CLI."
   },
   {
     "example": "Hugo",
     "path": "/hugo",
     "demo": "https://hugo.now-examples.now.sh",
     "description": "A Hugo site, created with the Hugo CLI."
+  },
+  {
+    "example": "Sapper",
+    "path": "/sapper",
+    "demo": "https://sapper.now-examples.now.sh",
+    "description": "A Sapper app, using the Sapper template."
   },
   {
     "example": "UmiJS",
