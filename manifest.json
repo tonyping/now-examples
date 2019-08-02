@@ -15,7 +15,7 @@
     "example": "Nuxt.js",
     "path": "/nuxtjs",
     "demo": "https://nuxtjs.now-examples.now.sh",
-    "description": "A Nuxt.js app, bootstrappd with create-nuxt-app."
+    "description": "A Nuxt.js app, bootstrapped with create-nuxt-app."
   },
   {
     "example": "Create-React-App",
@@ -76,6 +76,12 @@
     "path": "/docz",
     "demo": "https://docz.now-examples.now.sh",
     "description": "A static Docz site that can be expanded upon to create documentation with ease."
+  },
+  {
+    "example": "mdx-deck",
+    "path": "/mdx-deck",
+    "demo": "https://mdx-deck.now-examples.now.sh",
+    "description": "An mdx-deck presentation template that includes a theme."
   },
   {
     "example": "Gridsome",
