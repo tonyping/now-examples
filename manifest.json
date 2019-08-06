@@ -66,6 +66,12 @@
     "description": "A vanilla site, backed by serverless function."
   },
   {
+    "example": "Storybook",
+    "path": "/storybook",
+    "demo": "https://storybook.now-examples.now.sh",
+    "description": "A Storybook app, using the React demo template."
+  },
+  {
     "example": "Preact",
     "path": "/preact",
     "demo": "https://preact.now-examples.now.sh",
