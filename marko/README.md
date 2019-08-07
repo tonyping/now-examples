@@ -10,6 +10,8 @@ To get started with Marko.js on Now, you can use the [Marko CLI](https://github.
 $ marko create my-project
 ```
 
+> The only change made is to add `&& mv dist public` to the build script in the `package.json` file.
+
 ## Deploying this Example
 
 Once initialized, you can deploy the Marko.js example with just a single command:

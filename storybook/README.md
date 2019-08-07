@@ -10,6 +10,8 @@ To get started with Storybook on Now, you can use the [Now CLI](https://zeit.co/
 $ now init storybook
 ```
 
+> The only change made is to amend the output directory to `"public"` in the build script.
+
 ## Deploying this Example
 
 Once initialized, you can deploy the Storybook example with just a single command:

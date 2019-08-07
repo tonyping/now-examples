@@ -2,13 +2,15 @@
 
 This directory is a brief example of a [Nuxt.js](https://nuxtjs.org) app that can be deployed to ZEIT Now with zero configuration.
 
-## How we created this example 
+## How we created this example
 
 To get started with Nuxt.js on Now, you can use the [Create-Nuxt-App CLI](https://www.npmjs.com/package/create-nuxt-app) to initialize the project:
 
 ```shell
 $ npx create-nuxt-app my-app
 ```
+
+> The only change made is to amend the build script in `package.json` to `"nuxt generate && mv dist public"`.
 
 ## Deploying this Example
 

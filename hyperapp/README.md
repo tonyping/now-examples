@@ -10,6 +10,8 @@ To get started with HyperApp on Now, you can use the [Now CLI](https://zeit.co/d
 $ now init hyperapp
 ```
 
+> The only change made is to amend the `releaseTarget` to `"public"` in the `taskfile.js` file.
+
 ## Deploying this Example
 
 Once initialized, you can deploy the HyperApp example with just a single command:
