@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt generate && mv dist public",
+    "build": "nuxt generate",
     "start": "nuxt start"
   },
   "dependencies": {

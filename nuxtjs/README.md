@@ -10,7 +10,7 @@ To get started with Nuxt.js on Now, you can use the [Create-Nuxt-App CLI](https:
 $ npx create-nuxt-app my-app
 ```
 
-> The only change made is to amend the build script in `package.json` to `"nuxt generate && mv dist public"`.
+> The only change made is to amend the output directory in `nuxt.config.js` to `"/public"`.
 
 ## Deploying this Example
 
