@@ -19,7 +19,12 @@ const { join } = require('path');
 const fse = require('fs-extra');
 const tar = require('tar-fs');
 
-main();
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
 
 async function main() {
   const dist = join(__dirname, 'dist');
