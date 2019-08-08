@@ -40,7 +40,7 @@ async function main() {
   const target = join(__dirname, 'dist/_api/manifest.json');
   await fse.copy(join(__dirname, 'manifest.json'), target);
 
-  // Move _api to public for zero-concifg
+  // Copy dist/_api to public for zero-config
   await fse.copy(join(dist, '_api'), 'public');
 }
 
