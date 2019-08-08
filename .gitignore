@@ -1,3 +1,9 @@
+main.dwarf
+node_modules
+.bundle
+vendor
+target
+dist
 build/
 node_modules/
 .DS_STORE
