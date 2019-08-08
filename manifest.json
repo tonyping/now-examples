@@ -156,7 +156,7 @@
     "description": "A Mithril app to get you up and running."
   },
   {
-    "example": "Metalsmitb",
+    "example": "Metalsmith",
     "path": "/metalsmith",
     "demo": "https://metalsmith.now-examples.now.sh",
     "description": "A Metalsmith app, created using the static-site starter."
