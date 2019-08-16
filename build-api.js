@@ -9,8 +9,8 @@
  *     Get detailed list of all examples
  *     /_api/manifest.json
  *
- *     Download example files by name (e.g. "apollo")
- *     /_api/download/apollo.tar.gz
+ *     Download example files by name (e.g. "gatsby")
+ *     /_api/download/gatsby.tar.gz
  */
 
 const debuglog = require('util').debuglog('API_BUILDER');
