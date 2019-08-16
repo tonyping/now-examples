@@ -10,3 +10,6 @@ build/
 yarn.lock
 node_modules
 i18n/*
+
+.env
+.env.build
