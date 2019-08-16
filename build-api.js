@@ -1,5 +1,5 @@
 /**
- * Generate files for examples-api to `dist` folder
+ * Generate files for examples-api to `public` folder
  *
  * API ENDPOINTS
  *
