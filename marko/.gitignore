@@ -18,3 +18,7 @@ coverage
 
 # NPM
 node_modules
+
+# Environment Variables
+.env
+.env.build

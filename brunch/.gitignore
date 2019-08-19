@@ -24,3 +24,7 @@ node_modules/
 
 # Brunch output folder.
 public/
+
+# Environment Variables
+.env
+.env.build
