@@ -32,26 +32,23 @@ const Home = () => {
             : <span className="loading"></span>}
         </p>
 
-        <div className="row">
-          <Link href="https://github.com/zeit/next.js#getting-started">
-            <a className="card">
+        <div className='row'>
+          <Link href='https://github.com/zeit/next.js#setup'>
+            <a className='card'>
               <h3>Getting Started &rarr;</h3>
-              <p>Learn more about Next on Github and in their examples</p>
+              <p>Learn more about Next.js on GitHub and in their examples.</p>
             </a>
           </Link>
-          <Link href="https://open.segment.com/create-next-app">
-            <a className="card">
+          <Link href='https://github.com/zeit/next.js/tree/master/examples'>
+            <a className='card'>
               <h3>Examples &rarr;</h3>
-              <p>
-                Find other example boilerplates on the{' '}
-                <code>create-next-app</code> site
-              </p>
+              <p>Find other example boilerplates on the Next.js GitHub.</p>
             </a>
           </Link>
-          <Link href="https://github.com/segmentio/create-next-app">
-            <a className="card">
+          <Link href='https://github.com/zeit/next.js'>
+            <a className='card'>
               <h3>Create Next App &rarr;</h3>
-              <p>Was this tool helpful? Let us know how we can improve it</p>
+              <p>Was this tool helpful? Let us know how we can improve it!</p>
             </a>
           </Link>
         </div>
@@ -96,7 +93,7 @@ const Home = () => {
           width: 176px;
           text-align: center;
         }
-        @keyframes Loading { 
+        @keyframes Loading {
           0%{background-position:0% 50%}
           50%{background-position:100% 50%}
           100%{background-position:0% 50%}
