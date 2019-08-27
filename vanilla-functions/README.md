@@ -7,7 +7,7 @@ This directory is a brief example of a vanilla site that can be deployed to ZEIT
 To get started with a vanilla site on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
 ```shell
-$ now init vanilla
+$ now init vanilla-functions
 ```
 
 ## Deploying this Example
