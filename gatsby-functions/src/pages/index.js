@@ -31,7 +31,7 @@ function Index() {
       </h2>
       <p>
         <a
-          href="https://github.com/zeit/now-examples/blob/master/gatsby-node-typescript"
+          href="https://github.com/zeit/now-examples/blob/master/gatsby-functions"
           target="_blank"
           rel="noreferrer noopener"
         >
